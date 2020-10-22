@@ -84,6 +84,17 @@ img {
 }
 
 /** Utilities **/
+.text-center {
+    text-align: center;
+}
+
+.text-primary {
+    color: var(--primary);
+}
+
+.section {
+    padding: 5rem 0;
+}
 
 /** Headers **/
 .logo {
@@ -213,4 +224,16 @@ img {
     }
 }
 
+/* Page Template */
+.page h1 {
+    margin-bottom: 4rem;
+}
 
+.featured-image {
+    margin-bottom: 3rem;
+}
+
+.page.no-sidebars {
+    max-width: 80rem;
+    margin: 0 auto;
+}
