@@ -224,7 +224,7 @@ img {
     }
 }
 
-/* Page Template */
+/** Page Template **/
 .page h1 {
     margin-bottom: 4rem;
 }
@@ -236,4 +236,19 @@ img {
 .page.no-sidebars {
     max-width: 80rem;
     margin: 0 auto;
+}
+
+/** Page with sidebars **/
+@media (min-width: 768px) {
+    .page.with-sidebars {
+        display: flex;
+        justify-content: space-between;
+    }
+    .with-sidebars .page-content {
+        flex: 0 0 calc(60% - 2rem);
+    }
+
+    .with-sidebars .sidebar {
+        flex: 0 0 calc(40% - 2rem);
+    }
 }
