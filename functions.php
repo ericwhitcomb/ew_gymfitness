@@ -1,5 +1,8 @@
 <?php
 
+// Link to the queries file
+require get_template_directory() . '/inc/queries.php';
+
 // Creates the Menus
 function ew_gymfitness_menus() {
     // WordPress Function
@@ -34,7 +37,7 @@ function ew_gymfitness_setup() {
     add_image_size('square', 350, 350, true);
     add_image_size('portrait', 350, 724, true);
     add_image_size('box', 400, 375, true);
-    add_image_size('medium', 700, 400, true);
+    add_image_size('mediumSize', 700, 400, true);
     add_image_size('blog', 966, 644, true);
     // Add featured image
     add_theme_support( 'post-thumbnails');
